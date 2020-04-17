@@ -1,6 +1,8 @@
 import * as firebase from 'firebase/app';
 import 'firebase/firestore';
 
+
+// Get a Firestore instance
 const firebaseConfig = {
   apiKey: 'AIzaSyAZHUCFZ6X1v-V4IzVgoflz6fg9YETBR9M',
   authDomain: 'beautycorp-a8012.firebaseapp.com',
@@ -13,5 +15,6 @@ const firebaseConfig = {
 };
 
 const db = firebase.initializeApp(firebaseConfig).firestore();
+
 
 export default db;
