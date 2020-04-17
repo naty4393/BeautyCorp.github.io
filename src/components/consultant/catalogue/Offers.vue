@@ -1,53 +1,67 @@
 <template>
   <div>
-    <div v-for="(elemento, index) in dataOffert" :key="index.id" class="card" style="width: 18rem;">
-      <img class="card-img-top"
-      :src="img"
-      alt="Card image cap">
-      <div class="card-body">
-        <p class="card-text">{{ elemento.Categoría }}</p>
-        <h5 class="card-title">{{ elemento.Nombre }}</h5>
-        <p class="card-text">{{ elemento.Precio }}</p>
-    </div>
+    <div class="text-center">
+      <div class="container">
+        <br />
+        <h6>Catálogo Virtual</h6>
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="@/assets/img/PRODUCTOS/base studio obscure.jpg" class="d-block w-100" alt />
+              <h6>Esika</h6>
+              <h6>Precio Normal: S/.40.00</h6>
+              <h4>Precio Oferta: S/25.00</h4>
+            </div>
+            <div class="carousel-item">
+              <img src="@/assets/img/PRODUCTOS/byb.jpg" class="d-block w-100" alt />
+              <h6>Esika</h6>
+              <h6>Precio Normal: S/.80.00</h6>
+              <h4>Precio Oferta: S/55.00</h4>
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleControls"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleControls"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <br />
+        <div class="checkbox mb-3">
+          <router-link to="/logincli" class="btn btn-primary btn-block">
+          AÑADIR A CARRITO</router-link>
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-import { mapState } from 'vuex';
-/* import { catalogueFirebase } from '@/firebase/function-firebase';
- */
 export default {
-  name: 'Offers',
-  data() {
-    return {
-      ...mapState([
-        'dataOffert',
-      ]),
-    };
-  },
-  methods: {
-    /* watchImagenes() {
-      this.product = [];
-      catalogueFirebase()
-        .then((querySnapshot) => {
-          querySnapshot.forEach((doc) => {
-          // eslint-disable-next-line no-console
-            console.log('doc.data', doc.data());
-            const object = {
-              name: doc.data().nombre,
-              precio: doc.data().precio,
-              precioOfert: doc.data().precioOffer,
-              img: doc.data().img,
-            };
-            this.$store.dispatch('getOffert', object);
-            // eslint-disable-next-line no-console
-            console.log(object);
-          });
-          // eslint-disable-next-line no-console
-          console.log(this.product);
-        });
-    }, */
-  },
+  name: 'Offert',
 };
 </script>
+
+<style scoped>
+.text-center {
+  text-align: center !important;
+}
+.form-signin {
+  width: 50px;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+</style>

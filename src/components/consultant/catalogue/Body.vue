@@ -3,6 +3,7 @@
     <h2 class="h3 mb-3 font-weight-normal">
         Bienvenida {{ this.$store.state.name }}</h2>
     <MagazineView/>
+    <h3>Ofertas</h3>
     <Offerts/>
   </div>
 </template>

@@ -2,6 +2,7 @@
   <div class="home">
     <HeaderBurger/>
     <Body/>
+<!--     <Ofert/> -->
   </div>
 </template>
 
@@ -9,12 +10,13 @@
 /* import Burger from '@/components/consultant/catalogue/Burger.vue'; */
 import HeaderBurger from '@/components/HeaderBurger.vue';
 import Body from '@/components/consultant/catalogue/Body.vue';
-
+/* import Ofert from '@/components/consultant/catalogue/Offers.vue';
+ */
 export default {
   name: 'Home',
   components: {
-  /*     Burger, */
-    HeaderBurger,
+  /*     Ofert,
+ */ HeaderBurger,
     Body,
   },
 };
