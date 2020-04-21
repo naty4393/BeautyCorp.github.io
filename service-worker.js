@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.22bed8beb007908823f4fa48139e3d28.js"
+  "/precache-manifest.34692131e3b45619b99ec2024cdd69b3.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "beautycorp"});
